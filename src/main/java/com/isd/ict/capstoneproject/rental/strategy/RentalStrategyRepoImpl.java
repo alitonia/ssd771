@@ -12,7 +12,6 @@ import java.util.List;
 /**
  * The {@link RentalStrategyRepoImpl rentalStrategyRepoImpl} class is repository of rental strategy.
  *
- * @author Group 3
  *
  */
 public class RentalStrategyRepoImpl implements RentalStrategyRepo, ResultSetMappable<RentalStrategy> {

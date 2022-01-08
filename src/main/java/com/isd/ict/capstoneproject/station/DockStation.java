@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 /**
  * The {@link DockStation dockStation} object provide functionalities for dock object.
  *
- * @author Group 3
  *
  */
 @Builder

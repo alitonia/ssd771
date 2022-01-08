@@ -13,7 +13,6 @@ import java.util.List;
 /**
  * The {@link DockStationRepoImpl DockStationRepoImpl} class is repository of dock station.
  *
- * @author Group 3
  *
  */
 public class DockStationRepoImpl implements DockStationRepo, ResultSetMappable<DockStation> {

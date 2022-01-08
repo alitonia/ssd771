@@ -7,7 +7,6 @@ import java.util.List;
 /**
  * The {@link DockStationRepo dockStationRepo} interface provides functionalities of dock station's repository.
  *
- * @author Group 3
  *
  */
 public interface DockStationRepo extends BaseRepo<DockStation, Integer> {

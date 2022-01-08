@@ -11,7 +11,6 @@ import java.util.logging.Logger;
 /**
  * The {@link InterbankSubsystemController interbankSubsystemController} class provides functionalities for interbank.
  *
- * @author Group 3
  *
  */
 public class InterbankSubsystemController {

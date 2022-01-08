@@ -5,7 +5,6 @@ import com.isd.ict.capstoneproject.rental.Rental;
 /**
  * The {@link RentalDefaultCostStrategy rentalDefaultCostStrategy} object provide functionalities for rental object.
  *
- * @author Group 3
  *
  */
 public class RentalDefaultCostStrategy implements IRentalCostStrategy {

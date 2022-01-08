@@ -2,7 +2,6 @@ package com.isd.ict.capstoneproject.rental;
 /**
  * The {@link RentalStatus rentalStatus} THis class used for tracking status of the rental
  *
- * @author Group 3
  *
  */
 enum RentalStatus {

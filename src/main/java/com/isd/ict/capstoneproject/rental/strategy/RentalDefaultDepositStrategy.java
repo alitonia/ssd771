@@ -4,7 +4,6 @@ import com.isd.ict.capstoneproject.rental.Rental;
 /**
  * The {@link RentalDefaultDepositStrategy rentalDefaultDepositStrategy} object provide functionalities for rental object.
  *
- * @author Group 3
  *
  */
 

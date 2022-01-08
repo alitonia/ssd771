@@ -11,7 +11,6 @@ import java.util.regex.Pattern;
 /**
  * The {@link CreditCardRepoImpl creditCardRepoImpl} class provides functionalities for validating credit card.
  *
- * @author Group 3
  *
  */
 public class CreditCardValidator {

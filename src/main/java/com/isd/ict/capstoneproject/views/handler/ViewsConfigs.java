@@ -3,7 +3,6 @@ package com.isd.ict.capstoneproject.views.handler;
 /**
  * The {@link ViewsConfigs viewsConfigs} This class provides configurations for project
  *
- * @author Group 3
  *
  */
 public class ViewsConfigs {

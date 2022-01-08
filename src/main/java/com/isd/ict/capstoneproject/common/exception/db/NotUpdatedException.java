@@ -2,7 +2,6 @@ package com.isd.ict.capstoneproject.common.exception.db;
 /**
  * The {@link NotUpdatedException notUpdatedException} exception for not update situation.
  *
- * @author Group 3
  *
  */
 public class NotUpdatedException extends DataSourceException {

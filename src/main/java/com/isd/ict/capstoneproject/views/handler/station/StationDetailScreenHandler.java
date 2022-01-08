@@ -30,7 +30,6 @@ import java.util.stream.Collectors;
 /**
  * The {@link StationDetailScreenHandler stationDetailScreenHandler}
  * class handle action on station detail screen.
- * @author Group 3
  */
 public class StationDetailScreenHandler extends BaseScreenHandler implements ScreenElementObserver {
     private static final Logger LOGGER = Utils.getLogger(StationDetailScreenHandler.class.getName());

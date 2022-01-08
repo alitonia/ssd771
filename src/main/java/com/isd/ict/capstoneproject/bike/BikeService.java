@@ -7,8 +7,6 @@ import java.util.List;
 /**
  * The {@link BikeService bikeService} interface provides functionalities of bike service.
  *
- * @author Group 3
- *
  */
 public interface BikeService {
 

@@ -33,7 +33,6 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 /**
  * The {@link HomeScreenHandler homeScreenHandler} class handle action on home screen.
- * @author Group 3
  */
 public class HomeScreenHandler extends BaseScreenHandler implements ScreenElementObserver {
     private static final Logger LOGGER = Utils.getLogger(HomeScreenHandler.class.getName());

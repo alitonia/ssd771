@@ -15,7 +15,6 @@ import java.util.List;
 /**
  * The {@link RentalRepoImpl rentalRepoImpl} class is service of rental.
  *
- * @author Group 3
  *
  */
 public class RentalServiceImpl implements RentalService {

@@ -5,7 +5,6 @@ import com.isd.ict.capstoneproject.repository.BaseRepo;
 /**
  * The {@link CreditCardRepo creditCardRepo} interface provides functionalities of credit card's repository.
  *
- * @author Group 3
  *
  */
 public interface CreditCardRepo extends BaseRepo<CreditCard, String>{

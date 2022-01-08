@@ -19,7 +19,6 @@ import java.sql.SQLException;
 /**
  * The {@link ResultScreenHandler resultScreenHandler}
  * class handle action on result screen.
- * @author Group 3
  */
 public class ResultScreenHandler extends BaseScreenHandler {
     /**

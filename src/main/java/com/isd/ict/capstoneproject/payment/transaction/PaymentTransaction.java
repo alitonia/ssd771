@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 /**
  * The {@link PaymentTransaction paymentTransaction} object wraps information about payment transaction.
  *
- * @author Group 3
  *
  */
 @Builder

@@ -13,7 +13,6 @@ import java.util.Map;
 /**
  * The {@link DockDetailDTO dockDetailDTO} object wraps information to display to user about dock detail.
  *
- * @author Group 3
  *
  */
 @Builder

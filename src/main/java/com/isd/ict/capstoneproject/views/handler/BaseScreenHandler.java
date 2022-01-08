@@ -16,7 +16,6 @@ import java.util.logging.Logger;
 /**
  * The {@link BaseScreenHandler baseScreenHandler}
  * class handle common action on each screen.
- * @author Group 3
  */
 public abstract class BaseScreenHandler extends FXMLScreenHandler {
 

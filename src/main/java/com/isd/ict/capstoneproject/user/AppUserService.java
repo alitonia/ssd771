@@ -4,7 +4,6 @@ import com.isd.ict.capstoneproject.common.exception.db.DataSourceException;
 /**
  * The {@link AppUserService appUserService} interface provides functionalities of user service.
  *
- * @author Group 3
  *
  */
 public interface AppUserService {

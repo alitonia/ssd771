@@ -8,8 +8,6 @@ import lombok.NoArgsConstructor;
 /**
  * The {@link BikeType bikeType} object wraps information about bike type.
  *
- * @author Group 3
- *
  */
 @Data
 @Builder

@@ -5,7 +5,6 @@ import com.isd.ict.capstoneproject.repository.BaseRepo;
 /**
  * The {@link RentalRepo rentalRepo} interface provides functionalities of rental's repository.
  *
- * @author Group 3
  *
  */
 public interface RentalRepo extends BaseRepo<Rental, Integer> {

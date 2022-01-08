@@ -5,7 +5,6 @@ import com.isd.ict.capstoneproject.repository.BaseRepo;
 /**
  * The {@link PaymentTransactionRepo paymentTransactionRepo} interface provides functionalities of payment transaction's repository.
  *
- * @author Group 3
  *
  */
 

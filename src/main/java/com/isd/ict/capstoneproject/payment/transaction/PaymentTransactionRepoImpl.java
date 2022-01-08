@@ -13,7 +13,6 @@ import java.util.Objects;
 /**
  * The {@link PaymentTransactionRepoImpl PaymentTransactionRepoImpl} class is repository of payment transaction.
  *
- * @author Group 3
  *
  */
 public class PaymentTransactionRepoImpl implements PaymentTransactionRepo, ResultSetMappable<PaymentTransaction> {

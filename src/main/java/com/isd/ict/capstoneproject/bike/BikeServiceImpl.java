@@ -9,8 +9,6 @@ import java.util.List;
 /**
  * The {@link BikeServiceImpl bikeServiceImpl} class is service of bike.
  *
- * @author Group 3
- *
  */
 public class BikeServiceImpl implements BikeService {
     /**

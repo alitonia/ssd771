@@ -7,7 +7,6 @@ import java.util.Locale;
 import java.util.logging.Logger;
 /**
  * The {@link Utils utils} class provides formats for all class
- * @author Group 3
  */public class Utils {
 
     public static DateFormat DATE_FORMATTER = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");

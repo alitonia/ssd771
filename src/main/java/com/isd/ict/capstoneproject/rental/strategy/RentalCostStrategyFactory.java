@@ -2,7 +2,7 @@ package com.isd.ict.capstoneproject.rental.strategy;
 
 /**
  * The {@link RentalCostStrategyFactory rentalCostStrategyFactory} is used for picking the correct cost strategy for Rental both when create new Rental and reload Rental from Database.
- * @author thanhld
+ *
  */
 public class RentalCostStrategyFactory {
 

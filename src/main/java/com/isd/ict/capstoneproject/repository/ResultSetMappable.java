@@ -7,7 +7,6 @@ import java.sql.SQLException;
 /**
  * The {@link ResultSetMappable resultSetMappable} interface provides functionalities for repositories.
  *
- * @author Group 3
  *
  */
 public interface ResultSetMappable<T> {

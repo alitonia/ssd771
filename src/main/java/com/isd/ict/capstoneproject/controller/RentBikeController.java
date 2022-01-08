@@ -36,8 +36,6 @@ import java.util.logging.Logger;
 /**
  * The {@link RentBikeController rentBikeController} class provides functionalities for rent bike.
  *
- * @author Group 3
- *
  */
 public class RentBikeController {
     private static final Logger LOGGER = Utils.getLogger(RentBikeController.class.getName());

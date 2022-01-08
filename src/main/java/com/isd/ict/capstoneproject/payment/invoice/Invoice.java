@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 /**
  * The {@link Invoice invoice} object wraps information about invoice.
  *
- * @author Group 3
  *
  */
 @Builder

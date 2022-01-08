@@ -8,7 +8,6 @@ import java.time.temporal.ChronoUnit;
 /**
  * The {@link RentalDefaultCountingTimeStrategy rentalDefaultCountingTimeStrategy} object provide functionalities for rental strategy.
  *
- * @author Group 3
  *
  */
 public class RentalDefaultCountingTimeStrategy implements IRentalCountingTimeStrategy{

@@ -12,7 +12,6 @@ import java.time.LocalDateTime;
 /**
  * The {@link Rental rental} object wraps information about rental.
  *
- * @author Group 3
  *
  */
 @Data

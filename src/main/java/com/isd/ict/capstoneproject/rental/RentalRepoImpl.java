@@ -20,7 +20,6 @@ import static com.isd.ict.capstoneproject.utils.DateTimeUtils.parseLocalDateTime
 /**
  * The {@link RentalRepoImpl rentalRepoImpl} class is repository of rental.
  *
- * @author Group 3
  *
  */
 public class RentalRepoImpl implements RentalRepo, ResultSetMappable<Rental> {

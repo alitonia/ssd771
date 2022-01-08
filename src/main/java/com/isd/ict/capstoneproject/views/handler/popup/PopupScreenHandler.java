@@ -13,7 +13,6 @@ import javafx.util.Duration;
 import java.io.IOException;
 /**
  * The {@link PopupScreenHandler popupScreenHandler} class handle action on pop up screen.
- * @author Group 3
  */
 public class PopupScreenHandler extends BaseScreenHandler {
     /**

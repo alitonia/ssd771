@@ -16,7 +16,6 @@ import java.util.stream.Collectors;
 /**
  * The {@link ViewDockController viewDockController} class provides functionalities for view dock.
  *
- * @author Group 3
  */
 public class ViewDockController {
 

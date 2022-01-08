@@ -4,7 +4,6 @@ import lombok.Getter;
 /**
  * The {@link Message message}.
  *
- * @author Group 3
  *
  */
 @Getter

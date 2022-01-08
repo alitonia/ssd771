@@ -7,7 +7,6 @@ import java.util.List;
 /**
  * The {@link RentalStrategyRepo rentalStrategyRepo} interface provides functionalities of rental strategy's repository.
  *
- * @author Group 3
  *
  */
 public interface RentalStrategyRepo extends BaseRepo<RentalStrategy, Integer> {

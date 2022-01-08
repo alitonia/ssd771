@@ -5,7 +5,6 @@ import com.isd.ict.capstoneproject.common.exception.db.DataSourceException;
 /**
  * The {@link BaseRepo baseRepo} interface provides functionalities for repositories.
  *
- * @author Group 3
  *
  */
 public interface BaseRepo<T, ID> {

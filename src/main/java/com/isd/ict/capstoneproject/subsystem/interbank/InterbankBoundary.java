@@ -5,7 +5,7 @@ import com.isd.ict.capstoneproject.utils.ApplicationProgrammingInterface;
 /**
  * The {@link InterbankBoundary interbankBoundary} class provides functionalities for connect interbank.
  *
- * @author Group 3
+ *
  *
  */
 public class InterbankBoundary {

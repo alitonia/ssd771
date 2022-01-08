@@ -15,7 +15,6 @@ import java.io.IOException;
 import java.util.logging.Logger;
 /**
  * The {@link HomeStationListItemHandler homeStationListItemHandler} class handle action on home station list item.
- * @author Group 3
  */
 public class HomeStationListItemHandler extends FXMLScreenHandler implements ScreenElementObservable {
     private static final Logger LOGGER = Utils.getLogger(HomeStationListItemHandler.class.getName());
