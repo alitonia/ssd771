@@ -25,7 +25,6 @@
         stylesheets="@../css/home-station-list.css"
         xmlns="http://javafx.com/javafx/11.0.1"
         xmlns:fx="http://javafx.com/fxml/1"
-        fx:controller="com.isd.ict.capstoneproject.HelloController"
 >
     <top>
         <HBox maxHeight="100.0" maxWidth="1100.0" minHeight="100.0" minWidth="1100.0" prefHeight="100.0" prefWidth="1100.0" BorderPane.alignment="CENTER">

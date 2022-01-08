@@ -31,6 +31,7 @@ public class PopupScreenHandler extends BaseScreenHandler {
         super(stage, ViewsConfigs.POPUP_PATH);
     }
 
+
     /**
      * Popup message
      *
@@ -41,6 +42,10 @@ public class PopupScreenHandler extends BaseScreenHandler {
      * @throws IOException
      */
     private static PopupScreenHandler popup(String message, String imagePath, Boolean undecorated) throws IOException{
+        System.out.println("absss");
+        System.out.println(PopupScreenHandler.class.getResource("/views/fxml/popup.fxml"));
+
+        System.out.println(PopupScreenHandler.class.getResource(ViewsConfigs.POPUP_PATH));
         PopupScreenHandler popup = new PopupScreenHandler(new Stage());
         if (undecorated) popup.stage.initStyle(StageStyle.UNDECORATED);
         popup.message.setText(message);

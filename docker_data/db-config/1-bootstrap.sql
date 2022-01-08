@@ -93,3 +93,7 @@ CREATE TABLE Invoice
 );
 
 CREATE UNIQUE INDEX FK_Invoice_typeRentalId1_idx ON Invoice (type, rentalId);
+
+CREATE TABLE RentalStrategy(
+
+);
