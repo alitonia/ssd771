@@ -1,0 +1,45 @@
+.button {
+    -fx-font-family: "Segoe UI";
+}
+
+.label {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 18px;
+}
+
+#btnConfirm{
+    -fx-background-color: #68bf00;
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+}
+
+#btnConfirm:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #02a700;
+}
+
+#btnBack{
+    -fx-background-radius: 3;
+    -fx-background-color: #68bf00;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}
+
+#btnBack:hover {
+    -fx-background-color: #02a700;
+    -fx-cursor: hand;
+}
+
+#lbMessageType {
+    -fx-font-size: 36px;
+    -fx-text-fill: #009e07;
+}
+
+#lbMessageContent {
+    -fx-text-fill: #009e07;
+}
+
+#ivEcoBikeLogo:hover {
+    -fx-cursor: hand;
+}

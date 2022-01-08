@@ -1,0 +1,15 @@
+id,name,address,distance,maxCapacity,capacity,walkingTimeByMinutes
+1,Dock Station 1A,"12 Tran Duy Hung street, Cau Giay district, Hanoi",1600,12,3,12
+2,Dock Station 1B,"106 Tan Mai street, Hoang Mai district, Hanoi",7830,7,3,50
+3,Dock Station 2A,"12/50/65 Ta Hien street, Hoan Kiem district, Hanoi",11250,3,62
+4,Dock Station 2B,"123 Nguyen Chi Thanh street, Dong Da district, Hanoi",350,9,3,4
+6,Dock Station 4D,"70/195 Le Van Luong street, Thanh Xuan district, Hanoi",700,11,3,8
+7,Dock Station 5A,"26 Ta Quang Buu street, Hai Ba Trung district, Hanoi",6300,17,3,37
+8,Dock Station 2C,"238 Bach Mai street, Hai Ba Trung district, Hanoi",8600,9,3,54
+9,Dock Station 333,"165 Xa Dan street, Dong Da district, Hanoi",3400,6,3,17
+10,Dock Station 3A,"38 Xuan Thuy street, Cau Giay district, Hanoi",7000,13,3,44
+11,Dock Station 7C,"40 Kim Ma street, Ba Dinh district, Hanoi",6200,8,0,36
+12,Dock Station 4A,"126/59 Au Co street, Tay Ho district, Hanoi",13700,9,0,70
+13,Dock Station 1C,"67 Phung Hung street, Hoan Kiem district, Hanoi",12500,7,0,65
+14,Dock Station 5B,"58 Minh Khai street, Hai Ba Trung district, Hanoi",9800,10,0,56
+15,Dock Station 3B,"95 Tran Thai Tong street, Cau Giay district, Hanoi",7900,8,0,51

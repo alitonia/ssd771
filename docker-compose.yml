@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mysql:8.0.27
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker_data/db-config:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: softdev
+      MYSQL_USER: alitonia
+      MYSQL_PASSWORD: 123456
