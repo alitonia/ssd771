@@ -23,14 +23,14 @@
 
 #btnBack{
     -fx-background-radius: 3;
-    -fx-background-color: #68bf00;
+    -fx-background-color: #FF807F;
     -fx-font-weight: bold;
     -fx-text-fill: white;
     -fx-font-size: 15px;
 }
 
 #btnBack:hover {
-    -fx-background-color: #02a700;
+    -fx-background-color: #FF5E5C;
     -fx-cursor: hand;
 }
 
@@ -41,7 +41,7 @@
 
 #lbTitle {
     -fx-font-size: 28px;
-    -fx-text-fill: #8bbe3b;
+    -fx-text-fill: #FF807F;
     -fx-font-family: "Segoe UI";
 }
 

@@ -6,57 +6,41 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.layout.VBox?>
 
-
-<StackPane style="-fx-background-color: white"
-           maxHeight="-Infinity"
-           maxWidth="-Infinity"
-           minHeight="-Infinity"
-           minWidth="-Infinity"
-           prefHeight="653.0"
-           prefWidth="1097.0"
-           stylesheets="@../css/splash.css"
-           xmlns="http://javafx.com/javafx/8.0.171"
-           xmlns:fx="http://javafx.com/fxml/1"
-           fx:controller="com.isd.ict.capstoneproject.views.handler.SplashScreenHandler"
->
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="1097.0" style="-fx-background-color: white" stylesheets="@../css/splash.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isd.ict.capstoneproject.views.handler.SplashScreenHandler">
     <children>
         <VBox prefHeight="200.0" prefWidth="100.0">
             <children>
                 <AnchorPane prefHeight="260.0" prefWidth="1097.0">
                     <children>
-                        <ImageView fitHeight="105.0" fitWidth="199.0" layoutX="449.0" layoutY="222.0">
+                        <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="448.0" layoutY="127.0">
                             <image>
-                                <Image url="@../../images/logo.PNG"/>
+                                <Image url="@../../images/logo.PNG" />
                             </image>
                         </ImageView>
                     </children>
                 </AnchorPane>
                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                     <children>
-                        <ImageView fitHeight="33.0" fitWidth="200.0" layoutX="449.0" layoutY="6.0">
+                        <ImageView fitHeight="56.0" fitWidth="200.0" layoutX="449.0" layoutY="6.0">
                             <image>
-                                <Image url="@../../images/logo-name.PNG"/>
+                                <Image url="@../../images/logo-name.PNG" />
                             </image>
                         </ImageView>
                     </children>
                 </AnchorPane>
                 <AnchorPane prefHeight="42.0" prefWidth="1097.0">
                     <children>
-                        <ImageView fitHeight="48.0" fitWidth="65.0" layoutX="525.0" layoutY="8.0" pickOnBounds="true"
-                                   preserveRatio="true">
+                        <ImageView fitHeight="48.0" fitWidth="65.0" layoutX="525.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../../images/loading2.gif"/>
+                                <Image url="@../../images/loading2.gif" />
                             </image>
                         </ImageView>
                     </children>
                 </AnchorPane>
                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                     <children>
-                        <ProgressBar layoutX="449.0" layoutY="3.0" prefWidth="200.0" progress="0.8"
-                                     style="-fx-accent: #009e07;"/>
+                        <ProgressBar layoutX="449.0" layoutY="3.0" prefWidth="200.0" progress="0.8" style="-fx-accent: #009e07;" />
                     </children>
                 </AnchorPane>
             </children>
