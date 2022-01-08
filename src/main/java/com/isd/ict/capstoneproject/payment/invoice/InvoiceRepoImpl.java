@@ -16,7 +16,7 @@ import java.sql.Statement;
 /**
  * The {@link InvoiceRepoImpl invoiceRepoImpl} class is repository of invoice.
  *
- * @author Group 3
+ *
  *
  */
 public class InvoiceRepoImpl implements InvoiceRepo, ResultSetMappable<Invoice> {

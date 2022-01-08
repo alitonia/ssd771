@@ -15,7 +15,6 @@ import java.util.Objects;
  * The {@link FXMLScreenHandler fxmlScreenHandler}
  * class handle common action on each screen.
  *
- * @author Group 3
  */
 public class FXMLScreenHandler {
     /**

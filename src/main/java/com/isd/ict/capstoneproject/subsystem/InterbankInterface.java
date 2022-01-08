@@ -9,7 +9,6 @@ import com.isd.ict.capstoneproject.payment.transaction.PaymentTransaction;
 /**
  * The {@link InterbankInterface interbankInterface} class is used to to make transaction
  *
- * @author Group 3
  *
  */
 public interface InterbankInterface {

@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 /**
  * The {@link CreditCard creditCard} object wraps information about credit card.
  *
- * @author Group 3
  *
  */
 @Builder

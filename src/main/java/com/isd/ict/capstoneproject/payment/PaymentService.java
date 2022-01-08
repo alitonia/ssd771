@@ -9,7 +9,6 @@ import com.isd.ict.capstoneproject.rental.Rental;
 /**
  * The {@link PaymentService paymentService} interface provides functionalities of payment transaction service.
  *
- * @author Group 3
  *
  */
 public interface PaymentService {

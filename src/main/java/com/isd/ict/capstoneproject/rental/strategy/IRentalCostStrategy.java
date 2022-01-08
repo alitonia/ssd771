@@ -5,7 +5,6 @@ import com.isd.ict.capstoneproject.rental.Rental;
 /**
  * The {@link IRentalCostStrategy iRentalCostStrategy} interface provide functionalities for rental object.
  *
- * @author Group 3
  *
  */
 public interface IRentalCostStrategy {

@@ -5,7 +5,6 @@ import lombok.Data;
 /**
  * The {@link RentalStrategy rentalStrategy} object provide functionalities for rental object.
  *
- * @author Group 3
  *
  */
 @Builder

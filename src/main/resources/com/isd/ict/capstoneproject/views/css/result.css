@@ -8,14 +8,14 @@
 }
 
 #btnConfirm{
-    -fx-background-color: #68bf00;
+    -fx-background-color: #FF807F;
     -fx-font-size: 18px;
     -fx-text-fill: white;
 }
 
 #btnConfirm:hover {
     -fx-cursor: hand;
-    -fx-background-color: #02a700;
+    -fx-background-color: #FF5E5C;
 }
 
 #btnBack{

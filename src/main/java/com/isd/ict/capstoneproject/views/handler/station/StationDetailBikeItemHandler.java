@@ -20,7 +20,6 @@ import java.util.logging.Logger;
 /**
  * The {@link StationDetailBikeItemHandler stationDetailBikeItemHandler}
  * class handle action on station detail bike item screen.
- * @author Group 3
  */
 public class StationDetailBikeItemHandler extends FXMLScreenHandler implements ScreenElementObservable {
     private static final Logger LOGGER = Utils.getLogger(StationDetailBikeItemHandler.class.getName());

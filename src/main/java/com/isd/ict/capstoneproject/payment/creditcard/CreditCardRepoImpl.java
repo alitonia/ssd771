@@ -10,7 +10,6 @@ import java.sql.SQLException;
 /**
  * The {@link CreditCardRepoImpl creditCardRepoImpl} class is repository of credit card.
  *
- * @author Group 3
  *
  */
 public class CreditCardRepoImpl implements CreditCardRepo, ResultSetMappable<CreditCard> {

@@ -12,7 +12,6 @@ import java.sql.Statement;
 /**
  * The {@link AppUserRepoImpl appUserRepoImpl} class is repository of user.
  *
- * @author Group 3
  *
  */
 public class AppUserRepoImpl implements AppUserRepo, ResultSetMappable<AppUser> {

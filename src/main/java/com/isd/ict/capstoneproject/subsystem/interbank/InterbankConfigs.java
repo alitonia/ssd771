@@ -2,7 +2,7 @@ package com.isd.ict.capstoneproject.subsystem.interbank;
 
 /**
  * The {@link InterbankConfigs interbankConfigs} class provides interbank configurations
- * @author thanhld
+ *
  */
 public class InterbankConfigs {
     /**

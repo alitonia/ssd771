@@ -25,7 +25,6 @@ import java.io.IOException;
 import java.util.logging.Logger;
 /**
  * The {@link RentBikeScreenHandler rentBikeScreenHandler} class handle action on rent bike screen.
- * @author Group 3
  */
 public class RentBikeScreenHandler extends BaseScreenHandler {
     private static final Logger LOGGER = Utils.getLogger(RentBikeScreenHandler.class.getName());

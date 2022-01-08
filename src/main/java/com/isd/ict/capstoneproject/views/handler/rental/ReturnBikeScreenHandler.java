@@ -27,7 +27,6 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 /**
  * The {@link ReturnBikeScreenHandler returnBikeScreenHandler} class handle action on return bike screen.
- * @author Group 3
  */
 public class ReturnBikeScreenHandler extends BaseScreenHandler implements ScreenElementObserver {
     private static final Logger LOGGER = Utils.getLogger(ReturnBikeScreenHandler.class.getName());

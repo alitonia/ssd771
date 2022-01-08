@@ -10,7 +10,6 @@ import java.util.List;
 /**
  * The {@link AppUser appUser} interface provide functionalities for user object.
  *
- * @author Group 3
  *
  */
 @Builder

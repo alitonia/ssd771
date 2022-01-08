@@ -6,7 +6,6 @@ import java.util.List;
 /**
  * The {@link DockStationService dockStationService} interface provides functionalities of dock station service.
  *
- * @author Group 3
  *
  */
 public interface DockStationService {

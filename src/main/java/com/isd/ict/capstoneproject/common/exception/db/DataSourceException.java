@@ -4,7 +4,6 @@ import java.sql.SQLException;
 /**
  * The {@link DataSourceException dataSourceException} exception about data source.
  *
- * @author Group 3
  *
  */
 public class DataSourceException extends Exception {

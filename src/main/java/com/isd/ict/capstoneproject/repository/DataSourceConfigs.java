@@ -2,7 +2,7 @@ package com.isd.ict.capstoneproject.repository;
 
 /**
  * The {@link DataSourceConfigs dataSourceConfigs} class provides data configurations
- * @author thanhld
+ *
  */
 public class DataSourceConfigs {
 

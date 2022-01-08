@@ -17,8 +17,6 @@ import java.util.List;
 /**
  * The {@link BikeRepoImpl bikeRepoImpl} class is repository of bike.
  *
- * @author Group 3
- *
  */
 class BikeRepoImpl implements BikeRepo, ResultSetMappable<Bike> {
     /**

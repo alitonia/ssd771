@@ -7,8 +7,6 @@ import lombok.*;
 /**
  * The {@link Bike bike} object wraps information about bike.
  *
- * @author Group 3
- *
  */
 @Getter
 @Setter(AccessLevel.PACKAGE)

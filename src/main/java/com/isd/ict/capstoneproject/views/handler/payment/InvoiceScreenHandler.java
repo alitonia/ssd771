@@ -17,7 +17,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 /**
  * The {@link InvoiceScreenHandler invoiceScreenHandler} class handle action on invoice screen.
- * @author Group 3
  */
 public class InvoiceScreenHandler extends BaseScreenHandler {
     /**

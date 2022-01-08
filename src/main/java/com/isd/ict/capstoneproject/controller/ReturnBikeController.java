@@ -27,8 +27,6 @@ import java.util.logging.Logger;
 /**
  * The {@link ReturnBikeController returnBikeController} class provides functionalities for return bike.
  *
- * @author Group 3
- *
  */
 public class ReturnBikeController {
 

@@ -5,7 +5,6 @@ import com.isd.ict.capstoneproject.repository.BaseRepo;
 /**
  * The {@link AppUserRepo appUserRepo} interface provides functionalities of user's repository.
  *
- * @author Group 3
  *
  */
 public interface AppUserRepo extends BaseRepo<AppUser, Integer>{

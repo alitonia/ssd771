@@ -23,7 +23,6 @@ import java.util.logging.Logger;
 /**
  * The {@link PaymentServiceImpl paymentController} class provides functionalities for rental charge.
  *
- * @author Group 3
  *
  */
 public class PaymentServiceImpl implements PaymentService {

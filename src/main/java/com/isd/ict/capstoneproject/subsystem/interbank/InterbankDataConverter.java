@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 
 /**
  * The {@link InterbankDataConverter interbankDataConverter} class processes input and output data for Interbank API
- * @author thanhld
+ *
  */
 public class InterbankDataConverter {
 

@@ -16,8 +16,6 @@ import java.util.logging.Logger;
 /**
  * The {@link ViewRentalController viewRentalController} class provides functionalities for return bike.
  *
- * @author Group 3
- *
  */
 public class ViewRentalController {
     private static final Logger LOGGER = Utils.getLogger(ViewRentalController.class.getName());

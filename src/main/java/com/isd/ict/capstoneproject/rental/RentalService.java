@@ -10,7 +10,6 @@ import java.util.List;
 /**
  * The {@link RentalService RentalService} interface provides functionalities of rental service.
  *
- * @author Group 3
  *
  */
 public interface RentalService {

@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 /**
  * The {@link RentalDetailDTO rentDetailDTO} object wraps information to display to user about rental information.
  *
- * @author Group 3
  *
  */
 @AllArgsConstructor

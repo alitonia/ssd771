@@ -5,7 +5,6 @@ import java.time.format.DateTimeFormatter;
 /**
  * The {@link DateTimeUtils dateTimeUtils} class provides functionalities for
  * date time
- * @author Group 3
  */
 public class DateTimeUtils {
 

@@ -8,7 +8,6 @@ import java.sql.SQLException;
 /**
  * The {@link DataSource dataSource} class is data source.
  *
- * @author Group 3
  *
  */
 public class DataSource {

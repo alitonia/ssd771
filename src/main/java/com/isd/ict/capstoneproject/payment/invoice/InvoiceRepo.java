@@ -5,7 +5,6 @@ import com.isd.ict.capstoneproject.repository.BaseRepo;
 /**
  * The {@link InvoiceRepo invoiceRepo} interface provides functionalities of invoice's repository.
  *
- * @author Group 3
  *
  */
 public interface InvoiceRepo extends BaseRepo<Invoice, Integer>{

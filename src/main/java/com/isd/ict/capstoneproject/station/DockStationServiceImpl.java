@@ -6,7 +6,6 @@ import java.util.List;
 /**
  * The {@link DockStationServiceImpl dockStationServiceImpl} class is service of dock station.
  *
- * @author Group 3
  *
  */
 public class DockStationServiceImpl implements DockStationService {

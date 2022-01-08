@@ -9,7 +9,6 @@ import com.isd.ict.capstoneproject.subsystem.interbank.InterbankSubsystemControl
 /**
  * The {@link InterbankSubsystem InterbankSubsystem} class is used to communicate with the
  * Interbank to make transaction.
- * @author Group 3
  */
 public class InterbankSubsystem implements InterbankInterface {
 

@@ -4,7 +4,6 @@ import com.isd.ict.capstoneproject.common.exception.db.DataSourceException;
 /**
  * The {@link AppUserServiceImpl appUserServiceImpl} class is service of user.
  *
- * @author Group 3
  *
  */
 public class AppUserServiceImpl implements AppUserService {

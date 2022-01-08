@@ -7,8 +7,6 @@ import java.util.List;
 /**
  * The {@link BikeTypeRepo bikeTypeRepo} interface provides functionalities of bike type's repository.
  *
- * @author Group 3
- *
  */
 public interface BikeTypeRepo extends BaseRepo<BikeType, Integer>{
     /**

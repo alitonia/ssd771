@@ -20,7 +20,6 @@ import java.util.logging.Logger;
 /**
  * The {@link ViewRentScreenHandler viewRentScreenHandler}
  * class handle action on view rent screen.
- * @author Group 3
  */
 public class ViewRentScreenHandler extends BaseScreenHandler {
 
