@@ -37,6 +37,7 @@
     -fx-font-size: 28px;
     -fx-text-fill: #FF807F;
     -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
 }
 
 #lbTableTitle {

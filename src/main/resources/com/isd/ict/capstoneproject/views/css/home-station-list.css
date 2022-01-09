@@ -1,6 +1,8 @@
 .button {
     -fx-background-radius: 0;
     -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
 }
 
 .menu-button {
@@ -46,4 +48,9 @@
 
 #ivEcoBikeLogo:hover {
     -fx-cursor: hand;
+}
+
+#btnName {
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
 }

@@ -14,7 +14,7 @@
    <top>
       <HBox maxHeight="100.0" maxWidth="1100.0" minHeight="100.0" minWidth="1100.0" prefHeight="100.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
          <children>
-            <VBox maxHeight="100.0" maxWidth="157.0" minHeight="100.0" minWidth="157.0" prefHeight="100.0" prefWidth="157.0">
+            <VBox alignment="CENTER" maxHeight="100.0" maxWidth="157.0" minHeight="100.0" minWidth="157.0" prefHeight="100.0" prefWidth="157.0">
                <children>
                   <ImageView fx:id="ivEcoBikeLogo" fitHeight="74.0" fitWidth="132.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true">
                      <image>

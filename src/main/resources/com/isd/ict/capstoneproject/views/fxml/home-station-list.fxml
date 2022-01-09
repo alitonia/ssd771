@@ -2,8 +2,6 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -14,24 +12,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane
-        maxHeight="640.0"
-        maxWidth="1120.0"
-        minHeight="640.0"
-        minWidth="1120.0"
-        prefHeight="640.0"
-        prefWidth="1120.0"
-        style="-fx-background-color: white"
-        stylesheets="@../css/home-station-list.css"
-        xmlns="http://javafx.com/javafx/11.0.1"
-        xmlns:fx="http://javafx.com/fxml/1"
->
+<BorderPane maxHeight="640.0" maxWidth="1120.0" minHeight="640.0" minWidth="1120.0" prefHeight="640.0" prefWidth="1120.0" style="-fx-background-color: white" stylesheets="@../css/home-station-list.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
     <top>
         <HBox maxHeight="100.0" maxWidth="1100.0" minHeight="100.0" minWidth="1100.0" prefHeight="100.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
             <children>
-                <VBox maxHeight="100.0" maxWidth="157.0" minHeight="100.0" minWidth="157.0" prefHeight="100.0" prefWidth="157.0">
+                <VBox alignment="CENTER" maxHeight="100.0" maxWidth="157.0" minHeight="100.0" minWidth="157.0" prefHeight="100.0" prefWidth="157.0">
                     <children>
-                        <ImageView fx:id="ivEcoBikeLogo" fitHeight="74.0" fitWidth="132.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="ivEcoBikeLogo" fitHeight="74.0" fitWidth="84.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../../images/logo.PNG" />
 
@@ -52,7 +39,10 @@
                               <Image url="@../../images/search-icon.png" />
                           </image>
                       </ImageView>
-                      <Button fx:id="btnViewRent" layoutX="835.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#viewRent" prefHeight="55.0" prefWidth="108.0" text="My rental" />
+                      <Button fx:id="btnViewRent" layoutX="835.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#viewRent" prefHeight="55.0" prefWidth="108.0" text="My rental">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
                </children>
             </AnchorPane>
             </children>
@@ -64,37 +54,31 @@
             <children>
                 <HBox prefHeight="44.0" prefWidth="1100.0">
                     <children>
-                        <MenuButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="44.0" prefWidth="157.0" style="-fx-background-radius: 0;" text="Name" wrapText="true">
-                            <items>
-                                <MenuItem mnemonicParsing="false" text="Action 1" />
-                                <MenuItem mnemonicParsing="false" text="Action 2" />
-                            </items>
-                            <font>
-                                <Font name="Segoe UI Bold" size="15.0" />
-                            </font>
-                        </MenuButton>
+                  <Button fx:id="btnLocation1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="44.0" prefWidth="157.0" text="Name">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
                         <Button fx:id="btnLocation" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="44.0" prefWidth="400.0" text="Location">
                             <opaqueInsets>
                                 <Insets />
                             </opaqueInsets>
                         </Button>
-                        <MenuButton alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="44.0" prefWidth="240.0" text="No. of available bike" textAlignment="CENTER" wrapText="true">
-                            <items>
-                                <MenuItem mnemonicParsing="false" text="Action 1" />
-                                <MenuItem mnemonicParsing="false" text="Action 2" />
-                            </items>
-                        </MenuButton>
-                        <MenuButton alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="44.0" prefWidth="154.0" text="Distance" textAlignment="CENTER" wrapText="true">
-                            <items>
-                                <MenuItem mnemonicParsing="false" text="Action 1" />
-                                <MenuItem mnemonicParsing="false" text="Action 2" />
-                            </items>
-                        </MenuButton>
-                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="44.0" prefWidth="134.0">
+                  <Button fx:id="btnLocation2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="44.0" prefWidth="240.0" text="No. of available bike">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="44.0" prefWidth="154.0" text="Distance">
                             <opaqueInsets>
                                 <Insets />
                             </opaqueInsets>
                         </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="44.0" prefWidth="134.0" text="">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
                     </children>
                 </HBox>
                 <ScrollPane fx:id="pnStationList" focusTraversable="false" maxHeight="429.0" maxWidth="1100.0" prefHeight="429.0" prefWidth="1100.0">
