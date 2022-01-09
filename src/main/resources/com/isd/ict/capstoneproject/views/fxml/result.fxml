@@ -47,9 +47,9 @@
                   <Image url="@../../images/success.png" />
                </image>
             </ImageView>
-            <Label fx:id="lbMessageType" alignment="CENTER" contentDisplay="CENTER" layoutX="430.0" layoutY="265.0" prefHeight="53.0" prefWidth="300.0" text="Success !" textAlignment="CENTER" />
-            <Label fx:id="lbMessageContent" alignment="CENTER" contentDisplay="CENTER" layoutX="368.0" layoutY="318.0" prefHeight="55.0" prefWidth="400.0" text="Your deposit is successfully paid." textAlignment="CENTER" />
-            <Label fx:id="lbMessageResult" alignment="CENTER" contentDisplay="CENTER" layoutX="355.0" layoutY="366.0" prefHeight="40.0" prefWidth="450.0" text="Thank you for choosing EcoBikeRental !" textAlignment="CENTER" />
+            <Label fx:id="lbMessageType" alignment="CENTER" contentDisplay="CENTER" layoutX="407.0" layoutY="255.0" prefHeight="53.0" prefWidth="300.0" text="Success !" textAlignment="CENTER" />
+            <Label fx:id="lbMessageContent" alignment="CENTER" contentDisplay="CENTER" layoutX="357.0" layoutY="318.0" prefHeight="55.0" prefWidth="400.0" text="Your deposit is successfully paid." textAlignment="CENTER" />
+            <Label fx:id="lbMessageResult" alignment="CENTER" contentDisplay="CENTER" layoutX="343.0" layoutY="373.0" prefHeight="40.0" prefWidth="450.0" text="Thank you for choosing EcoBikeRental !" textAlignment="CENTER" />
          </children>
       </AnchorPane>
    </center>

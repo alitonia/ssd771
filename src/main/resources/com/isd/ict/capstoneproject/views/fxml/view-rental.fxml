@@ -79,9 +79,9 @@
                         <Label text="  Bike Type" />
                         <Label fx:id="lbBikeType" alignment="CENTER" prefHeight="20.0" prefWidth="287.0" text="  E-bike" GridPane.columnIndex="1" />
                         <Label text="  Deposit amount" GridPane.rowIndex="4" />
-                        <Label fx:id="lbDepositAmount" alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="310.0" text="500,000 VNĐ  " textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="lbDepositAmount" alignment="CENTER" prefHeight="20.0" prefWidth="310.0" text="500,000 VNĐ  " textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                         <Label text="  Rent amount" GridPane.rowIndex="5" />
-                        <Label fx:id="lbRentAmount" alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="290.0" text="100,000 VNĐ  " GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="lbRentAmount" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="290.0" text="100,000 VNĐ  " GridPane.columnIndex="1" GridPane.rowIndex="5" />
                         <Label text="  License plate" GridPane.rowIndex="1" />
                         <Label fx:id="lbLicensePlate" alignment="CENTER" prefHeight="20.0" prefWidth="304.0" text="29H2-9953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         <Label fx:id="lbBattery" alignment="CENTER" prefHeight="20.0" prefWidth="292.0" text="80%  " GridPane.columnIndex="1" GridPane.rowIndex="2" />
