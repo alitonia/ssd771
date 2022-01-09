@@ -47,6 +47,15 @@ CREATE TABLE Bike
     CONSTRAINT fk_Bike_BikeType1 FOREIGN KEY (type) REFERENCES BikeType (id)
 );
 
+CREATE TABLE RentalStrategy(
+                               id            INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
+                               name          VARCHAR(45)  NOT NULL,
+                               description   VARCHAR(150),
+                               depositStrategy VARCHAR(45),
+                               costStrategy VARCHAR(45),
+                               countingTimeStrategy VARCHAR(45)
+);
+
 CREATE TABLE Rental
 (
     id                      INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -58,8 +67,10 @@ CREATE TABLE Rental
     currentPauseTime        VARCHAR(45),
     currentRestartTime      VARCHAR(45),
     status                  INTEGER DEFAULT 0,
+    strategy                INTEGER,
     CONSTRAINT fk_Rental_User1 FOREIGN KEY (userId) REFERENCES AppUser (id),
-    CONSTRAINT fk_Rental_Bike1 FOREIGN KEY (bikeBarcode) REFERENCES Bike (barcode)
+    CONSTRAINT fk_Rental_Bike1 FOREIGN KEY (bikeBarcode) REFERENCES Bike (barcode),
+    CONSTRAINT fk_Rental_Strategy1 FOREIGN KEY (strategy) REFERENCES RentalStrategy (id)
 );
 
 CREATE TABLE CreditCard
@@ -93,12 +104,3 @@ CREATE TABLE Invoice
 );
 
 CREATE UNIQUE INDEX FK_Invoice_typeRentalId1_idx ON Invoice (type, rentalId);
-
-CREATE TABLE RentalStrategy(
-    id            INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    name          VARCHAR(45)  NOT NULL,
-    description   VARCHAR(150),
-    depositStrategy VARCHAR(45),
-    costStrategy VARCHAR(45),
-    countingTimeStrategy VARCHAR(45)
-);
