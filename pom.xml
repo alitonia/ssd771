@@ -90,6 +90,14 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>com.isd.ict.capstoneproject.HelloApplication</mainClass>
+                            <options>
+                                <option>--add-opens</option>
+                                <option>java.base/java.net=ALL-UNNAMED</option>
+                                <option>--add-opens</option>
+                                <option>java.base/java.lang.reflect=ALL-UNNAMED</option>
+                                <option>--add-opens</option>
+                                <option>java.base/java.lang=ALL-UNNAMED</option>
+                            </options>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
