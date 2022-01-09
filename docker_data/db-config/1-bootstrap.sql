@@ -47,13 +47,14 @@ CREATE TABLE Bike
     CONSTRAINT fk_Bike_BikeType1 FOREIGN KEY (type) REFERENCES BikeType (id)
 );
 
-CREATE TABLE RentalStrategy(
-                               id            INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
-                               name          VARCHAR(45)  NOT NULL,
-                               description   VARCHAR(150),
-                               depositStrategy VARCHAR(45),
-                               costStrategy VARCHAR(45),
-                               countingTimeStrategy VARCHAR(45)
+CREATE TABLE RentalStrategy
+(
+    id                   INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    name                 VARCHAR(45)            NOT NULL,
+    description          VARCHAR(150),
+    depositStrategy      VARCHAR(45),
+    costStrategy         VARCHAR(45),
+    countingTimeStrategy VARCHAR(45)
 );
 
 CREATE TABLE Rental
@@ -77,26 +78,26 @@ CREATE TABLE CreditCard
 (
     cardCode    VARCHAR(45) PRIMARY KEY NOT NULL,
     owner       VARCHAR(45)             NOT NULL,
-    dateExpired DATE                    NOT NULL,
+    dateExpired VARCHAR(20)                 NOT NULL,
     cvvCode     VARCHAR(45)             NOT NULL
 );
 
 CREATE TABLE PaymentTransaction
 (
-    id        INTEGER PRIMARY KEY NOT NULL,
+    id        VARCHAR(45) PRIMARY KEY NOT NULL,
     rentalId  INTEGER,
-    cardCode  VARCHAR(45)             NOT NULL,
-    amount    INTEGER                 NOT NULL,
-    contents  VARCHAR(100)            NOT NULL,
-    errorCode VARCHAR(100)            NOT NULL,
-    createdAt VARCHAR(45)             NOT NULL,
+    cardCode  VARCHAR(45)         NOT NULL,
+    amount    INTEGER             NOT NULL,
+    contents  VARCHAR(100)        NOT NULL,
+    errorCode VARCHAR(100)        NOT NULL,
+    createdAt VARCHAR(45)         NOT NULL,
     CONSTRAINT fk_PaymentTransaction_CreditCard1 FOREIGN KEY (cardCode) REFERENCES CreditCard (cardCode)
 );
 
 CREATE TABLE Invoice
 (
     id            INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    transactionId INTEGER DEFAULT NULL,
+    transactionId VARCHAR(45) DEFAULT NULL,
     type          INTEGER                NOT NULL CHECK (type = 1 OR type = -1),
     rentalId      INTEGER                NOT NULL,
     amount        INTEGER,

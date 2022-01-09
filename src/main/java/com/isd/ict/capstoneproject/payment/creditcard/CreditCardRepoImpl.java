@@ -7,10 +7,9 @@ import com.isd.ict.capstoneproject.repository.ResultSetMappable;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
 /**
  * The {@link CreditCardRepoImpl creditCardRepoImpl} class is repository of credit card.
- *
- *
  */
 public class CreditCardRepoImpl implements CreditCardRepo, ResultSetMappable<CreditCard> {
 
@@ -56,10 +55,10 @@ public class CreditCardRepoImpl implements CreditCardRepo, ResultSetMappable<Cre
     public CreditCard insert(CreditCard card) throws DataSourceException {
         try {
             String sql = "insert into CreditCard(cardCode, owner, dateExpired, cvvCode) values " +
-                    "(" + "'" + card.getCardCode()        + "'" + "," +
-                          "'" + card.getOwner()           + "'" + "," +
-                          "'" + card.getDateExpired()     + "'" + "," +
-                          "'" + card.getCvvCode()         + "'" + ")";
+                    "(" + "'" + card.getCardCode() + "'" + "," +
+                    "'" + card.getOwner() + "'" + "," +
+                    "'" + card.getDateExpired() + "'" + "," +
+                    "'" + card.getCvvCode() + "'" + ")";
             int noOfChanged = DATA_SOURCE.getConnection().createStatement().executeUpdate(sql);
             if (noOfChanged == 0) throw new NotUpdatedException("Not Inserted CreditCard");
             return getById(card.getCardCode());
@@ -78,17 +77,24 @@ public class CreditCardRepoImpl implements CreditCardRepo, ResultSetMappable<Cre
     @Override
     public CreditCard update(CreditCard card) throws DataSourceException {
         try {
+            System.out.println("Potential faulty impl");
+            System.out.println(card.getDateExpired());
+
+            var fourDigitsDate = card.getDateExpired();
+
             String sql = "update CreditCard set " +
-                    "owner = "          + "'" + card.getOwner()        + "'" + "," +
-                    "dateExpired = "    + "'" + card.getDateExpired()  + "'" + "," +
-                    "cvvCode = "        + "'" + card.getCvvCode()      + "'" + " " +
-                    "where cardCode = " + "'" + card.getCardCode()     + "'";
+                    "owner = " + "'" + card.getOwner() + "'" + "," +
+                    "dateExpired = " + "'" + card.getDateExpired() + "'" + "," +
+                    "cvvCode = " + "'" + card.getCvvCode() + "'" + " " +
+                    "where cardCode = " + "'" + card.getCardCode() + "'";
 
             System.out.println("Update");
+            System.out.println();
             System.out.println(sql);
 
             int noOfChanged = DATA_SOURCE.getConnection().createStatement().executeUpdate(sql);
-            if (noOfChanged == 0) throw new NotUpdatedException("Not Updated CreditCard with Card Code = " + card.getCardCode());
+            if (noOfChanged == 0)
+                throw new NotUpdatedException("Not Updated CreditCard with Card Code = " + card.getCardCode());
             return getById(card.getCardCode());
         } catch (SQLException ex) {
             throw new DataSourceException(ex);
@@ -104,12 +110,23 @@ public class CreditCardRepoImpl implements CreditCardRepo, ResultSetMappable<Cre
      */
     @Override
     public CreditCard mapFromResultSet(ResultSet res) throws SQLException {
+        System.out.println("Hello in credit reader");
+
+        System.out.println(res.getString("dateExpired"));
+        System.out.println(res);
+        System.out.println(res);
+
+
+
         CreditCard card = CreditCard.builder()
                 .cardCode(res.getString("cardCode"))
                 .owner(res.getString("owner"))
                 .dateExpired(res.getString("dateExpired"))
                 .cvvCode(Integer.parseInt(res.getString("cvvCode")))
                 .build();
+
+        System.out.println(card);
+
         return card;
     }
 }

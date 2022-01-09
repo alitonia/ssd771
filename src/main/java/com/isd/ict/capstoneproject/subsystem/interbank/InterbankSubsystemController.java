@@ -34,6 +34,8 @@ public class InterbankSubsystemController {
 	 * @return {@link PaymentTransaction paymentTransaction}
 	 */
 	public PaymentTransaction refund(CreditCard card, int amount, String contents) {
+		System.out.println("HEllo");
+		System.out.println(card);
 		String payload = INTERBANK_DATA_CONVERTER.convertToPayload(card, amount, contents, InterbankConfigs.REFUND_COMMAND);
 		LOGGER.info(payload);
 		String responseText = INTERBANK_BOUNDARY.query(InterbankConfigs.PROCESS_TRANSACTION_URL, payload);

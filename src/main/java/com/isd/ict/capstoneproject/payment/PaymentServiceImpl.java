@@ -95,6 +95,8 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public CreditCard getCreditCardToRefund(int rentalId) throws DataSourceException {
+        System.out.println("Searching card here");
+
         Invoice depositInvoice = invoiceRepo.getDepositInvoiceByRentalId(rentalId);
         CreditCard card = paymentTransactionRepo
                 .getById(depositInvoice.getTransaction().getTransactionId())

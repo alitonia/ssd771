@@ -73,7 +73,8 @@ public class PaymentTransactionRepoImpl implements PaymentTransactionRepo, Resul
             } else creditCardRepo.update(transaction.getCard());
 
             String sql = "insert into PaymentTransaction(id, cardCode, amount, contents, errorCode, createdAt) values " +
-                    "(" + "'" + transaction.getTransactionId() + "'" + "," +
+                    "(" +
+                    "'" + transaction.getTransactionId() + "'" + "," +
                     "'" + cardCode + "'" + "," +
                     "'" + transaction.getAmount() + "'" + "," +
                     "'" + transaction.getContents() + "'" + "," +

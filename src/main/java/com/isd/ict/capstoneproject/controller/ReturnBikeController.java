@@ -68,7 +68,7 @@ public class ReturnBikeController {
         }
         return INSTANCE;
     }
-    
+
     private ReturnBikeController() {
         this.dataSource = DataSource.getInstance();
         this.paymentService = new PaymentServiceImpl();
@@ -80,7 +80,7 @@ public class ReturnBikeController {
 
     /**
      * Return bike
-     * 
+     *
      * @param authenticationToken   - encoded string of user authentication
      * @param dockStationId         - dock station's id
      * @return {@link Message}
@@ -102,6 +102,8 @@ public class ReturnBikeController {
             int rentalId = rental.getRentId();
             int amount = rentalService.calculateDeposit(rental) - rentalService.calculateCost(rental);
             String content = "rental_refund_" + rentalId;
+            System.out.println("Refunding here");
+
             refundTransaction = paymentService.refundRent(amount, content, paymentService.getCreditCardToRefund(rentalId));
         } catch (DataSourceException ex) {
             LOGGER.info(ex.getMessage());
