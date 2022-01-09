@@ -172,3 +172,8 @@ INSERT INTO RentalStrategy
 (id, name, description, depositStrategy, costStrategy, countingTimeStrategy)
 VALUES (1, "Normal", "Normal rates", "Normal", "Normal", "Normal"),
        (2, "24-hour pass", "200,000 VND for 24h", "Normal", "24h", "Normal");
+
+INSERT INTO CreditCard(cardCode, owner, dateExpired, cvvCode)
+VALUES (
+    "ict_group3_2021", "Group 3", "2025-11-30", "244"
+       );

@@ -21,7 +21,7 @@ public class PaymentTransactionRepoImpl implements PaymentTransactionRepo, Resul
      * credit card repository
      */
     private final CreditCardRepo creditCardRepo;
-    
+
     public PaymentTransactionRepoImpl() {
         this.creditCardRepo = new CreditCardRepoImpl();
     }
@@ -58,8 +58,17 @@ public class PaymentTransactionRepoImpl implements PaymentTransactionRepo, Resul
     @Override
     public PaymentTransaction insert(PaymentTransaction transaction) throws DataSourceException {
         try {
+            System.out.println("Hello");
+
             String cardCode = transaction.getCard().getCardCode();
+            System.out.println(cardCode);
+            System.out.println(creditCardRepo.toString());
+            System.out.println(creditCardRepo.getById(cardCode));
+            System.out.println("magga");
+
+
             if (Objects.isNull(creditCardRepo.getById(cardCode))) {
+                System.out.println("Hello1");
                 creditCardRepo.insert(transaction.getCard());
             } else creditCardRepo.update(transaction.getCard());
 
@@ -70,10 +79,16 @@ public class PaymentTransactionRepoImpl implements PaymentTransactionRepo, Resul
                     "'" + transaction.getContents() + "'" + "," +
                     "'" + transaction.getErrorCode() + "'" + "," +
                     "'" + transaction.getCreatedAt() + "'" + ")";
+            System.out.println("no-where");
+            System.out.println(sql);
             int noOfInserted = DATA_SOURCE.getConnection().createStatement().executeUpdate(sql);
+            System.out.println(noOfInserted);
+
             if (noOfInserted == 0) throw new NotUpdatedException("Not Inserted PaymentTransaction");
             return getById(transaction.getTransactionId());
         } catch (SQLException ex) {
+            System.out.println("oops");
+
             throw new DataSourceException(ex);
         }
     }

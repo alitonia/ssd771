@@ -99,6 +99,7 @@ CREATE TABLE Invoice
     transactionId INTEGER DEFAULT NULL,
     type          INTEGER                NOT NULL CHECK (type = 1 OR type = -1),
     rentalId      INTEGER                NOT NULL,
+    amount        INTEGER,
     CONSTRAINT fk_Invoice_Rental1 FOREIGN KEY (rentalId) REFERENCES Rental (id),
     CONSTRAINT fk_Invoice_PaymentTransaction1 FOREIGN KEY (transactionId) REFERENCES PaymentTransaction (id)
 );

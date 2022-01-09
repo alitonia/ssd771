@@ -21,6 +21,11 @@ public class InterbankBoundary {
 	String query(String url, String data) throws UnrecognizedException {
 		String response;
 		try {
+			System.out.println("query");
+			System.out.println(url);
+			System.out.println(data);
+
+
 			response = ApplicationProgrammingInterface.post(url, data);
 		} catch (Exception e) {
 			e.printStackTrace();

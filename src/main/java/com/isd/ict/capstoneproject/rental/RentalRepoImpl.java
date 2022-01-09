@@ -60,6 +60,12 @@ public class RentalRepoImpl implements RentalRepo, ResultSetMappable<Rental> {
                           "'" + rental.getRentalStrategy().getId()  + "'" + "," +
                           "'" + rental.getStatus().getValue()       + "'" + ")";
 
+            System.out.println("222222----222");
+            System.out.println(rental.toString());
+            System.out.println(rental.getRentalStrategy());
+            System.out.println(sql);
+
+
             PreparedStatement stm = DATA_SOURCE.getConnection().prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             stm.execute();
             ResultSet res = stm.getGeneratedKeys();

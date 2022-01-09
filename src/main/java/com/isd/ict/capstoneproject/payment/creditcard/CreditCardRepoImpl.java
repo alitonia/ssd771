@@ -25,12 +25,22 @@ public class CreditCardRepoImpl implements CreditCardRepo, ResultSetMappable<Cre
     public CreditCard getById(String id) throws DataSourceException {
         try {
             String sql = "select * from CreditCard where cardCode = '" + id + "'";
+            System.out.println("Get it");
+            System.out.println(sql);
+
             ResultSet res = DATA_SOURCE.getConnection().createStatement().executeQuery(sql);
+            System.out.println("Get it1");
+            System.out.println(res);
+
             if (res.next()) {
                 return mapFromResultSet(res);
             }
-            throw new NotFoundException();
+            System.out.println("Not Get it2");
+            return null;
+//            throw new NotFoundException();
         } catch (SQLException ex) {
+            System.out.println("F it");
+
             throw new DataSourceException(ex);
         }
     }
@@ -73,6 +83,10 @@ public class CreditCardRepoImpl implements CreditCardRepo, ResultSetMappable<Cre
                     "dateExpired = "    + "'" + card.getDateExpired()  + "'" + "," +
                     "cvvCode = "        + "'" + card.getCvvCode()      + "'" + " " +
                     "where cardCode = " + "'" + card.getCardCode()     + "'";
+
+            System.out.println("Update");
+            System.out.println(sql);
+
             int noOfChanged = DATA_SOURCE.getConnection().createStatement().executeUpdate(sql);
             if (noOfChanged == 0) throw new NotUpdatedException("Not Updated CreditCard with Card Code = " + card.getCardCode());
             return getById(card.getCardCode());

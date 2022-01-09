@@ -160,12 +160,15 @@ public class RentBikeController {
     public Message confirmDepositBike(DepositBikeInvoiceDTO invoiceDTO, String cardCode, String owner, String dateExpired, String cvvCode) {
 
         PaymentTransaction transaction;
+        System.out.println("______");
         // pay deposit
         try {
             String content = "rental_deposit";
             transaction = paymentService.payRent(invoiceDTO.getAmount(), content, cardCode, owner, dateExpired, cvvCode);
         } catch (Exception ex) {
             LOGGER.info(ex.getMessage());
+            System.out.println("___1___");
+
             return new FailureMessage("Failed\n" + ex.getMessage(), "Please try again!");
         }
 
@@ -175,20 +178,40 @@ public class RentBikeController {
                 // begin transaction
                 dataSource.enableTransaction();
                 // save rental
+                System.out.println("___2_1__");
+
                 Rental rental = invoiceDTO.getRental();
+                System.out.println("___2_2__");
+
                 rental = rentalService.insert(rental);
                 // save invoice
+                System.out.println("___2_3__");
+
                 paymentService.insertInvoice(transaction, rental, Invoice.TYPE_PAY);
                 // update facility
+                System.out.println("___2_4__");
+
                 String rentedBikeBarcode = rental.getBike().getBarcode();
+                System.out.println("___2_5__");
+
                 int locationToUpdate = rental.getBike().getLocation().getDockStationId();
+                System.out.println("___2_6__");
+
                 bikeService.updateRentedBikeLocation(rentedBikeBarcode);
+                System.out.println("___2_7__");
+
                 dockStationService.updateCapacity(locationToUpdate);
+                System.out.println("___2_8__");
+
                 // start rental and commit transaction
                 rentalService.start(rental);
+                System.out.println("___2_9__");
+
                 dataSource.getConnection().commit();
                 return new SuccessMessage("Succeeded", "Enjoy your ride!");
             } catch (DataSourceException ex) {
+                System.out.println("___2___");
+
                 LOGGER.info(ex.getMessage());
                 String content = "rental_refund_ebr_internal_server_error";
                 // rollback transaction
@@ -200,6 +223,8 @@ public class RentBikeController {
                 dataSource.disableTransaction();
             }
         } catch (SQLException ex) {
+            System.out.println("___3___");
+
             LOGGER.info(ex.getMessage());
             return new FailureMessage(new InternalServerException().getMessage(), "Please try again!");
         }
