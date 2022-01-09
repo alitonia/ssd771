@@ -64,6 +64,7 @@ public class HelloApplication extends Application {
                 fieldToAsset.put(localAssetsStr, url);
             }
             Utils.sideLoader(fieldToAsset);
+
             System.out.println("ml");
 
             System.out.println(Utils.getFXML(ViewsConfigs.RETURN_BIKE_DOCK_LIST_PATH));
@@ -80,6 +81,7 @@ public class HelloApplication extends Application {
             StackPane root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(ViewsConfigs.SPLASH_SCREEN_PATH)));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
+            primaryStage.setMaximized(true);
             primaryStage.show();
             System.out.println("b " + HelloApplication.class.getResource("views/fxml/splash.fxml").getPath());
             System.out.println("a " + HelloApplication.class.getResource("views/fxml/hello-view.fxml").getPath());
