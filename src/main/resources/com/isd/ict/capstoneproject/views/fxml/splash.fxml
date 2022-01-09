@@ -7,10 +7,9 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="1097.0" style="-fx-background-color: white" stylesheets="@../css/splash.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isd.ict.capstoneproject.views.handler.SplashScreenHandler">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="1097.0" style="-fx-background-color: white" stylesheets="@../css/splash.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isd.ict.capstoneproject.views.handler.SplashScreenHandler">
     <children>
-        <VBox prefHeight="200.0" prefWidth="100.0">
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
             <children>
                 <AnchorPane prefHeight="260.0" prefWidth="1097.0">
                     <children>

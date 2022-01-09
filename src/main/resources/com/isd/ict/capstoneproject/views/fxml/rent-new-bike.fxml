@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="640.0" maxWidth="1120.0" minHeight="640.0" minWidth="1120.0" prefHeight="640.0" prefWidth="1120.0" style="-fx-background-color: white" stylesheets="@../css/rent-new-bike.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="640.0" maxWidth="1120.0" minHeight="640.0" minWidth="1120.0" prefHeight="640.0" prefWidth="1120.0" style="-fx-background-color: white" stylesheets="@../css/rent-new-bike.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <HBox maxHeight="100.0" maxWidth="1100.0" minHeight="100.0" minWidth="1100.0" prefHeight="100.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
          <children>
@@ -52,7 +52,7 @@
             <Label layoutX="296.0" layoutY="175.0" text="PLEASE ENTER THE BAR CODE" />
             <TextField fx:id="txtBarcode" layoutX="296.0" layoutY="207.0" maxHeight="45.0" maxWidth="509.0" minHeight="45.0" minWidth="509.0" prefHeight="45.0" prefWidth="509.0" />
             <Button fx:id="btnRentBike" layoutX="440.0" layoutY="374.0" mnemonicParsing="false" onMouseClicked="#requestRentBike" prefHeight="56.0" prefWidth="220.0" text="Rent This Bike" />
-            <Button fx:id="btnResetBarcode" layoutX="824.0" layoutY="207.0" mnemonicParsing="false" onMouseClicked="#resetBarcodeInput" prefHeight="45.0" prefWidth="75.0" text="Reset" />
+            <Button fx:id="btnResetBarcode" layoutX="824.0" layoutY="207.0" mnemonicParsing="false" onMouseClicked="#resetBarcodeInput" prefHeight="45.0" prefWidth="90.0" text="Reset" />
             <ImageView fitHeight="149.0" fitWidth="200.0" layoutX="450.0">
                <image>
                   <Image url="@../../images/bike-image.jpg" />

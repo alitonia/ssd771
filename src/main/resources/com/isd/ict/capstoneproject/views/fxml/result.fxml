@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="640.0" prefWidth="1120.0" style="-fx-background-color: white;" stylesheets="@../css/result.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="640.0" prefWidth="1120.0" style="-fx-background-color: white;" stylesheets="@../css/result.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <HBox maxHeight="100.0" maxWidth="1100.0" minHeight="100.0" minWidth="1100.0" prefHeight="100.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
          <children>
@@ -47,9 +47,9 @@
                   <Image url="@../../images/success.png" />
                </image>
             </ImageView>
-            <Label fx:id="lbMessageType" alignment="CENTER" contentDisplay="CENTER" layoutX="464.0" layoutY="264.0" prefHeight="53.0" prefWidth="185.0" text="Success !" textAlignment="CENTER" />
-            <Label fx:id="lbMessageContent" alignment="CENTER" contentDisplay="CENTER" layoutX="383.0" layoutY="318.0" prefHeight="55.0" prefWidth="347.0" text="Your deposit is successfully paid." textAlignment="CENTER" />
-            <Label fx:id="lbMessageResult" alignment="CENTER" contentDisplay="CENTER" layoutX="383.0" layoutY="364.0" prefHeight="40.0" prefWidth="347.0" text="Thank you for choosing EcoBikeRental !" textAlignment="CENTER" />
+            <Label fx:id="lbMessageType" alignment="CENTER" contentDisplay="CENTER" layoutX="430.0" layoutY="265.0" prefHeight="53.0" prefWidth="300.0" text="Success !" textAlignment="CENTER" />
+            <Label fx:id="lbMessageContent" alignment="CENTER" contentDisplay="CENTER" layoutX="368.0" layoutY="318.0" prefHeight="55.0" prefWidth="400.0" text="Your deposit is successfully paid." textAlignment="CENTER" />
+            <Label fx:id="lbMessageResult" alignment="CENTER" contentDisplay="CENTER" layoutX="355.0" layoutY="366.0" prefHeight="40.0" prefWidth="450.0" text="Thank you for choosing EcoBikeRental !" textAlignment="CENTER" />
          </children>
       </AnchorPane>
    </center>

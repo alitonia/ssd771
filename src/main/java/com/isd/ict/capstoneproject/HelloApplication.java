@@ -81,7 +81,6 @@ public class HelloApplication extends Application {
             StackPane root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(ViewsConfigs.SPLASH_SCREEN_PATH)));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
-            primaryStage.setMaximized(true);
             primaryStage.show();
             System.out.println("b " + HelloApplication.class.getResource("views/fxml/splash.fxml").getPath());
             System.out.println("a " + HelloApplication.class.getResource("views/fxml/hello-view.fxml").getPath());
