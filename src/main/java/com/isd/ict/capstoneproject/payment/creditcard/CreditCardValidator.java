@@ -48,7 +48,7 @@ public class CreditCardValidator {
         String[] elementOfCardNumber = cardNumber.split("_");
 
         // First part must be 121319 (classCode)
-        if (!elementOfCardNumber[0].equals("121319")) { return false; }
+        if (!elementOfCardNumber[0].equals("ict")) { return false; }
 
         // Second part is group + one numbers
         if (elementOfCardNumber[1].length() != 6) { return false; }
@@ -58,7 +58,7 @@ public class CreditCardValidator {
         if (!Character.isDigit(elementOfCardNumber[1].charAt(5))) { return false; }
 
         // Third part must be 2020
-        return elementOfCardNumber[2].equals("2020");
+        return elementOfCardNumber[2].equals("2021");
     }
 
     /**

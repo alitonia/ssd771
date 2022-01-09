@@ -170,10 +170,10 @@
                   </Label>
                   <Button fx:id="btnConfirmPayDepositRent" layoutX="333.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#confirmToRentBike" prefHeight="53.0" prefWidth="171.0" text="Deposit Rent" />
                   <RadioButton layoutX="89.0" layoutY="122.0" mnemonicParsing="false" selected="true" text="Credit Card" />
-                  <TextField fx:id="txtCardNumber" layoutX="39.0" layoutY="213.0" prefHeight="27.0" prefWidth="468.0" promptText="Ex: &lt;ClassCode&gt;_group&lt;GroupNumber&gt;_&lt;ClassYear&gt;" text="121319_group3_2020" />
+                  <TextField fx:id="txtCardNumber" layoutX="39.0" layoutY="213.0" prefHeight="27.0" prefWidth="468.0" promptText="Ex: &lt;ClassCode&gt;_group&lt;GroupNumber&gt;_&lt;ClassYear&gt;" text="ict_group3_2021" />
                   <TextField fx:id="txtCardHolderName" layoutX="38.0" layoutY="271.0" prefHeight="27.0" prefWidth="466.0" promptText="Ex: Group &lt;GroupCode&gt;" text="Group 3" />
                   <TextField fx:id="txtCardExpiredDate" layoutX="41.0" layoutY="329.0" prefHeight="27.0" prefWidth="465.0" promptText="Ex: mm/YY" text="11/25" />
-                  <TextField fx:id="txtCardSecurityCode" layoutX="41.0" layoutY="388.0" prefHeight="27.0" prefWidth="463.0" promptText="Ex: 123" text="865" />
+                  <TextField fx:id="txtCardSecurityCode" layoutX="41.0" layoutY="388.0" prefHeight="27.0" prefWidth="463.0" promptText="Ex: 123" text="244" />
                   <Line endX="361.0" layoutX="140.0" layoutY="172.0" startX="-100.0" />
                </children>
             </AnchorPane>

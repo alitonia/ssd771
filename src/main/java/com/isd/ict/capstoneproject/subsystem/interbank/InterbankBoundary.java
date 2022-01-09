@@ -23,6 +23,7 @@ public class InterbankBoundary {
 		try {
 			response = ApplicationProgrammingInterface.post(url, data);
 		} catch (Exception e) {
+			e.printStackTrace();
 			throw new UnrecognizedException();
 		}
 		return response;

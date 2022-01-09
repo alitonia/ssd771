@@ -12,11 +12,11 @@ public class InterbankConfigs {
     /**
      * public key
      */
-    static final String PUBLIC_KEY = "BGosAzDQUOU=";
+    static final String PUBLIC_KEY = "CH7Dh0L8E/Y=";
     /**
      * secret key
      */
-    static final String SECRET_KEY = "B9yEw2vfsMQ=";
+    static final String SECRET_KEY = "BDDkQaKokiA=";
     /**
      * pay command
      */
@@ -28,5 +28,5 @@ public class InterbankConfigs {
     /**
      * version
      */
-    static final String VERSION = "1.0.0";
+    static final String VERSION = "1.0.1";
 }

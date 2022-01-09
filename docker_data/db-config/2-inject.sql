@@ -167,3 +167,8 @@ VALUES ("5738612568", 2, "29-K1 10041", 1, 91),
        ("8977047717", 2, "29-H1 29558", 10, 95),
        ("6576694307", 2, "29-F1 10481", 10, 86),
        ("5167848753", 1, "30-E2 30222", 10, 97);
+
+INSERT INTO RentalStrategy
+(id, name, description, depositStrategy, costStrategy, countingTimeStrategy)
+VALUES (1, "Normal", "Normal rates", "Normal", "Normal", "Normal"),
+       (2, "24-hour pass", "200,000 VND for 24h", "Normal", "24h", "Normal");

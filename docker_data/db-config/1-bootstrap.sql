@@ -95,5 +95,10 @@ CREATE TABLE Invoice
 CREATE UNIQUE INDEX FK_Invoice_typeRentalId1_idx ON Invoice (type, rentalId);
 
 CREATE TABLE RentalStrategy(
-
+    id            INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    name          VARCHAR(45)  NOT NULL,
+    description   VARCHAR(150),
+    depositStrategy VARCHAR(45),
+    costStrategy VARCHAR(45),
+    countingTimeStrategy VARCHAR(45)
 );
